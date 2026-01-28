@@ -18,3 +18,9 @@ View your app in AI Studio: https://ai.studio/apps/drive/1__RSihGsDHfmecILSTABLW
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Deploy on Vercel
+
+1. Add an environment variable named `GEMINI_API_KEY` in your Vercel project (Production and Preview).
+2. Set the Build Command to `npm run build` and the Output Directory to `dist`.
+3. Deploy. The API endpoint is `/api/generate-world-event` and runs on Node.js 20.
